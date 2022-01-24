@@ -1,2 +1,123 @@
 /*.attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }*/
+/*font-family: 'Inter', sans-serif;*/
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/********************* GENERAL STYLES ***********************/
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    background-color: #090b1a;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+/*********************** MAIN STYLES *************************/
+main, .attribution, section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+.container {
+    width: 88%;
+    background-color: #1b1938;
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* FONT FAMILIES*/
+
+/*************************** HERO ****************************/
+
+.hero {
+    /*#aa5cdb*/
+    color: #000000;
+    padding-bottom: 242px; 
+    background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url('../img/image-header-mobile.jpg')no-repeat center;
+    background-size: cover;
+}
+
+.spacer {
+    display: none;
+}
+
+/************************ AD COPY ****************************/
+
+.ad-copy .container {
+    width: 80%;
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1 {
+    padding-bottom: 18px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.ad-copy span {
+    color: #aa5cdb;
+}
+
+.ad-copy p {
+    width: 85%;
+    line-height: 28px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+/************************ STATISTICS *************************/
+
+.stats .container {
+    width: 80%;
+    margin-top: 48px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.one-stat {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 33px;
+}
+
+.one-stat h2 {
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.one-stat p {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/******************** ATTRIBUTION ****************************/
+
+.attribution {
+    margin-top: 89px;
+}
