@@ -202,10 +202,12 @@ h1 {
 
     .ad-copy h1 {
         padding-bottom: 40px;
+        text-align: left;
     }
 
     .ad-copy p {
         padding-bottom: 83px;
+        text-align: left;
     }
 
     /******************* STATS ***************/
