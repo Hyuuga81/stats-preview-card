@@ -43,6 +43,24 @@ main, .attribution, section {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+    border-radius: 15px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.content .container {
+    margin-top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 /* FONT FAMILIES*/
@@ -55,6 +73,9 @@ main, .attribution, section {
     padding-bottom: 242px; 
     background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url('../img/image-header-mobile.jpg')no-repeat center;
     background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
 }
 
 .spacer {
@@ -64,7 +85,7 @@ main, .attribution, section {
 /************************ AD COPY ****************************/
 
 .ad-copy .container {
-    width: 80%;
+    width: 100%;
     margin-top: 42px;
     display: flex;
     justify-content: center;
@@ -73,6 +94,7 @@ main, .attribution, section {
 }
 
 h1 {
+    width: 100%;
     padding-bottom: 18px;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 2em;
@@ -84,7 +106,7 @@ h1 {
 }
 
 .ad-copy p {
-    width: 85%;
+    width: 100%;
     line-height: 28px;
     text-align: center;
     color: hsla(0, 0%, 100%, 0.6);
@@ -103,7 +125,7 @@ h1 {
 .one-stat {
     width: 100%;
     text-align: center;
-    padding-bottom: 33px;
+    padding-bottom: 36px;
 }
 
 .one-stat h2 {
@@ -120,4 +142,89 @@ h1 {
 
 .attribution {
     margin-top: 89px;
+}
+
+.attribution a {
+    padding-left:10px;
+}
+
+/*********************** DESKTOP STYLES **********************/
+
+@media (min-width: 1440px) {
+    .container {
+        width: 80%;
+        flex-direction: row-reverse;
+        margin-top: 176px; 
+        padding-top: 0;
+    }
+
+    .hero, .content {
+        width: 50%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .content .container {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    /************************* HERO ************************/
+    .hero {
+        margin: 0;
+        padding-bottom: 520px;
+        background: linear-gradient(hsl(277, 64%, 61%, 0.5), hsl(277, 64%, 61%, 0.5)), url('../img/image-header-desktop.jpg')no-repeat center;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0;
+    }
+
+    /****************** AD COPY **************/
+
+    
+
+    .ad-copy {
+        padding-top: 80px;
+        width: 100%;
+    }
+
+    .ad-copy .container {
+        margin-top: 0;
+        width: 100%;
+        
+    }
+
+    .ad-copy h1 {
+        padding-bottom: 40px;
+    }
+
+    .ad-copy p {
+        padding-bottom: 83px;
+    }
+
+    /******************* STATS ***************/
+    .stats {
+        width: 100%;
+        padding-bottom: 68px;
+        
+    }
+
+    .stats .container {
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .one-stat {
+        width: 22%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
 }
