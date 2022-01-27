@@ -71,8 +71,9 @@ main, .attribution, section {
     /*#aa5cdb*/
     color: #000000;
     padding-bottom: 242px; 
-    background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url('../img/image-header-mobile.jpg')no-repeat center;
+    background: linear-gradient(rgba(170, 92, 219), rgba(170, 92, 219)), url('../img/image-header-mobile.jpg')no-repeat center;
     background-size: cover;
+    background-blend-mode: multiply;    /*removed 0.5 opacity this does the same thing but with sharper colors*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     
@@ -178,7 +179,9 @@ h1 {
     .hero {
         margin: 0;
         padding-bottom: 449px;
-        background: linear-gradient(hsl(277, 64%, 61%, 0.5), hsl(277, 64%, 61%, 0.5)), url('../img/image-header-desktop.jpg')no-repeat center;
+        background: linear-gradient(hsl(277, 64%, 61%), hsl(277, 64%, 61%)), url('../img/image-header-desktop.jpg')no-repeat center;
+        /*background-color: hsl(277, 64%, 61%); Don't need a linear gradient. Background color works with blend mode multiply. But it may be a little dark?*/
+        background-blend-mode: multiply;  
         background-size: cover;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
